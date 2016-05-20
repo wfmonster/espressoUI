@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Espresso UI</title>
+	<link rel="stylesheet" href="espresso.css">
+</head>
+
+<body>
+
+<div class="header"> <h2>Espresso UI 1.0</h2> </div>
+
+<div class="nav">
+	<ul>
+		<li><a href="#overview">Overview</a></li>
+		<li><a href="espresso.html">Typography</a></li>
+		<li><a href="#colorPalette">Color Palette</a></li>
+		<li><a href="#icons">Icons</a></li>
+		<li><a href="buttons.html">Buttons</a></li>
+		<li><a href="forms.html">Forms</a></li>
+		<li><a href="#tabs">Tabs</a></li>
+		
+	</ul>
+</div><!-- end Nav -->
+
+
+<div id="overview" class="mainContent">
+
+	<div class = "contentTitle">
+		<h1 class="superheading"> CSS </h1>
+		<h1>Espresso elements</h1>
+		<p>CSS elements to style your genie skins by Profound Logic</hp>
+	</div> <!-- End contentTitle-->
+
+	<div class="sectionTitle accentColor2">
+		<h2> Typography </h2>
+	</div>
+
+	<div id = "typography">
+		
+		<p class="font"> Source Sans Pro Font Family</p>
+
+		<h2>Headings</h2>
+		<p>Create lighter, secondary text in any heading with the <code> .subtext </code> class.</p>
+
+		<div class="example">	
+			<h1>H1 Main heading </h1>
+			<p class="subtext"> Source Sans Pro, Black (900), 24px </p>
+			<hr>
+			<h2>H2 Subtitles, sometimes in Bold</h2>
+			<p class="subtext"> Source Sans Pro, Bold (700), 21px </p>
+			<hr>
+			<h3>H3 Source Sans Regular</h3>
+			<p class="subtext"> Source Sans Pro, Regular (400), 18px </p>
+			<hr>
+			<h4>H4 Source Sans Italics</h4>
+			<p class="subtext"> Source Sans Pro, Italic (400), 18px </p>
+			<hr>
+			<h5>H5 Source Sans Light, List Items</h5>
+			<p class="subtext"> Source Sans Pro, light (300), 14px </p>
+			<hr>
+			<h6>H6 Source Sans Extra Light</h6>
+			<p class="subtext"> Source Sans Pro, extralight (200), 14px </p>
+		</div>
+
+
+		<p>Code Snippets for using the h1 - h6 tags in your code</p>
+		<!-- color: #2f6f9f; -->
+		<div class="codeBox">
+			<pre>
+				<code class="language-html" data-lang="html">
+					<span class= "nt"> &lt;h1&gt; </span> 
+					h1 Espresso heading 
+					<span class= "nt">&lt;/h1&gt;</span>
+					<br>
+
+					<span class= "nt">&lt;h2&gt;</span>
+					h2 Espresso heading
+					<span class= "nt">&lt;/h2&gt;</span>
+					<br>
+
+					<span class= "nt">&lt;h3&gt;</span>
+					h3 Espresso heading
+					<span class= "nt">&lt;/h3&gt;</span>
+					<br>
+
+					<span class= "nt">&lt;h4&gt; </span>
+					h4 Espresso heading 
+					<span class= "nt">&lt;/h4&gt; </span>
+					<br>
+
+					<span class= "nt">&lt;h5&gt; </span>
+					h5 Espresso heading
+					<span class= "nt">&lt;/h5&gt;</span>
+					<br>
+
+					<span class= "nt">&lt;h6&gt; </span>
+					h6 Espresso heading
+					<span class= "nt">&lt;/h6&gt;</span>
+				</code>
+			</pre>
+		</div>
+
+	
+		<h2> Body Copy </h2>
+		<p>Espresso's global default font-size is 14px, with a line-height of 1.4. This is applied to the <body> and all paragraphs.</p>
+		
+		<div class="example">	
+			<p><strong>Body text</strong></p>
+			<p>This is source sans pro body copy for all our paragraph and copy needs. 
+			The quick brown fox jumped over the moon. The five boxing wizards jump quickly. 
+			Source Sans pairs well with Source Code Pro which is our Monospaced font. </p>
+		</div>
+		
+		<p>Code Snippets for using the body text default styling</p>
+		<div class="codeBox">
+				<pre>
+					<code class="language-html" data-lang="html">
+						
+						<span class= "nt"> &lt;p&gt; </span> 
+						body text  
+						<span class= "nt">&lt;/p&gt;</span>
+						<br>
+
+					</code>
+				</pre>
+	    </div>
+	</div> <!-- end typography id -->
+
+	<div id = "colorPalette">
+		<h1>Color Palette</h1>
+		<p>The Espresso UI theme as a vibrant and dynamic color palette to give a rich and 
+			and bold feel to your application's user Interface </p>
+		<ul>
+			<li class="primaryColor"> Primary Color </li>	
+			<li class="accentColor1"> Accent Color </li>
+			<li class="accentColor2"> Accent Color </li>
+		</ul>
+		<ul>
+			<li class="accentColor3"> Accent Color </li>
+			<li class="accentColor4"> Accent Color </li>
+			<li class="bgColor">Background</li>
+		</ul>
+
+		
+			<div class="codeBox">
+				<pre>
+					<code data-lang ="css">
+						
+						Primary Color <br>
+
+						/* Font color */ <br>
+						.primary { <br>
+							&nbsp color: #1C120E; <br>
+						}</br>
+
+						/* background color */ <br>
+						.primaryColor { <br>
+							&nbsp background-color: #1C120E; <br>
+						} <br>
+
+						<br>
+						Accent Color One <br>
+						/* Font color */ <br>
+						.accentOne { <br>
+							color: color: #297770; <br>
+						}<br>
+
+						/* background color */ <br>
+						.accentColor1{ <br>
+							background-color: #297770; <br>
+						}<br>
+
+	
+					</code>
+				</pre>
+			</div>
+	
+	</div> <!-- end colorpalette id -->
+
+</div> <!-- End content div -->
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

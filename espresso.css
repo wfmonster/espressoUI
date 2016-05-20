@@ -1,0 +1,441 @@
+/*************************************************************
+
+CSS style guide and framework for use with the espresso ui kit 
+which will be used to build a genie skin. 
+
+Author: Phyllis J. Beck
+Email: pbeck@profoundlogic.com
+Date: Fri, May 20 2016
+Version: 1.0
+Copyright 2016 Profound Logic 
+
+*************************************************************/
+
+
+/********** Default styles ***************/
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+a:link, a:visited, a:hover, a:active{ text-decoration: none; }
+a:link, a:visited { color: #fff; }
+a:hover { color: #C2C767; }
+a:active { color: #D87F27; }
+
+code, pre  {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p code {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	color: #751313 ;
+	margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	font-family: "Source Sans Pro", "sans-serif";
+    line-height: 1.4;
+    margin: 7px;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+.example h1, .example h2, .example h3, .example h4, 
+.example h5, .example h6, .example p{
+	font-family: "Source Sans Pro", "sans-serif";
+    line-height: 1.4;
+    margin: 0;
+}
+
+.example h1 {
+	font-size: 24px;
+	font-weight: 900;
+	
+}
+
+.example h2 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.example h3, .example h4 {
+	font-size: 18px;
+	font-weight: 400;
+	
+}
+
+.example h4 {
+	font-style: italic;;
+}
+
+.example h5 {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.example h5 {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.example h6{
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.subtext {
+	color: #777;
+	line-height: 
+}
+
+hr{
+   border: 0.5px solid #e5e5e5;
+}
+
+ul li {
+	font-family: "Source Sans Pro", "sans-serif";
+	list-style: none;	
+}
+
+div {
+	display: block;
+}
+
+.header {
+	position: absolute;
+	left:0;
+	right: 0;
+	height: 80px;
+	background-color: #1C120E;
+	border-bottom: solid 5px #C2C767;
+}
+
+.header h2 {
+	color: #fff;
+	margin-left: 25px;
+}
+
+/**** Side bar navigation styling **************************/
+
+.nav{
+	position: fixed;
+	top: 85px;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.nav ul {
+	/*background-color: #f7f5fa;*/
+	/*margin: 25px;
+	padding: 15px;*/
+	height: 450px;
+	padding-left: 0;
+
+}
+
+.nav a {
+	color: #716b7a;
+	text-shadow: 0 1px 0 #fff;
+	display: block;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 5px 30px;
+    border-left: 4px solid transparent;
+}
+
+.nav a:active, .nav a:hover {
+	border-left: 4px solid #297770;
+	color: #297770;
+}
+
+
+/***** Main Content containers **************************/
+
+.mainContent {
+	position: absolute;
+	left: 20%;
+	top: 85px;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	border-left: 1px solid #ccc;
+}
+
+.contentTitle {
+	padding-top: 25px;
+	padding-left: 25px;
+	height: 150px;
+	background-color: #297770; 
+	color: #fff;
+}
+
+.superheading {
+	font-size: 60px;	
+	font-weight: 300;
+	line-height: 1;
+}
+
+.sectionTitle{
+	height: 60px;
+	padding: 15px 0 0 25px;
+	color: #fff;
+}
+
+.sectionTitle h2 {
+	font-weight: 400;
+}
+
+#typography .font{
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.example {
+    position: relative;
+    padding: 20px 15px 15px;
+    margin: 0 15px 15px;
+    background-color: #fff;
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+/**** Content Sections **************************/
+
+#typography, #icons, #buttons, 
+#colorPalette, #forms, #tabs {
+	padding: 15px;
+}
+
+
+/*Color Palette Swatches************************/
+
+#colorPalette ul li {
+	display: inline-block;
+	padding: 15px;
+	list-style: none;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+/* dark brown */
+.primaryColor {
+	background-color: #1C120E;
+}
+
+/* teal */
+.accentColor1{
+	background-color: #297770;
+}
+
+/* light green */
+.accentColor2{
+	background-color: #C2C767;
+}
+
+/* orange */
+.accentColor3{
+	background-color: #D87F27;
+}
+
+/* yellow */
+.accentColor4{
+	background-color: #F7D98F;
+}
+
+/* off white / beige */
+.bgColor {
+	background-color: #F9F0DC;
+	color: #222;
+}
+
+#colorPalette ul li.bgColor, #colorPalette ul li.accentColor4 {
+	color: #222;
+}
+
+
+
+
+/***** Core theme base colors ***********************/
+
+/* dark brown */
+.primary{
+	color: #1C120E;
+}
+
+/* teal */
+.accentOne{
+	color: #297770;
+}
+
+/* light green */
+.accentTwo {
+	color: #C2C767;
+}
+
+/* orange */
+.accentThree {
+	color: #D87F27;
+}
+
+/* yellow */
+.accentFour {
+	 color: #F7D98F
+}
+
+/* off white / beige */
+.background {
+	 color: #F9F0DC;
+}
+
+
+/************* Button Styles ********************/
+
+button {
+	width: 115px;
+	height: 45px;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	border-bottom: 4px solid transparent;
+	letter-spacing: 0.2em;
+	-webkit-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
+	   -moz-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
+	        box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
+}
+
+#buttons ul li{
+	display: inline-block;
+	margin: 15px;
+}
+
+#buttons .active {
+	border-bottom: 4px solid #D87F27;
+	color: #D87F27;
+}
+
+
+#buttons .hover {
+	border-bottom: 4px solid #C2C767;
+	color: #C2C767;
+}
+
+#buttons .disabled {
+	background-color: #ccc;
+	color: #fff;
+}
+
+
+/**** Demo Box Styles *********************************
+ A handy little box to display your nifty css demos.
+*******************************************************/
+
+.demoBox {
+	width: 700px;
+	padding-top: 15px;
+	-webkit-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+	   -moz-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+			box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+}
+
+.demo {
+	height: 50px;
+	padding: 0 0 15px 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.demo a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/**** Demo Elememt styles *****************************
+   CSS elements that are styled for demo purposes 
+	should always begin with the .demo class 
+*******************************************************/
+
+/* button demo */
+.demo button:active {
+	border-bottom: 4px solid #D87F27;
+	color: #D87F27;
+}
+.demo button:hover {
+	border-bottom: 4px solid #C2C767;
+	color: #C2C767;
+}
+
+/**** Code Example Styles  **************************/
+
+.codeBox{
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-left: 4px solid #297770;
+}
+
+.demoBox .codeBox {
+	height: 60px;
+}
+
+.codeBox pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    white-space: nowrap;
+}
+
+.codeBox pre code {
+    font-size: inherit;
+    color: #333;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Code syntax highlighting */
+
+.nt {
+    color: #2f6f9f;
+}
+
+
+
+
+
+
