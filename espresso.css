@@ -110,63 +110,72 @@ p{
                    Links 
 ***************************************************/
 
-a:link, a:visited, a:hover, a:active{ text-decoration: none; }
-a:link, a:visited { color: #fff; }
-a:hover { color: #C2C767; }
-a:active { color: #D87F27; }
-
+/*nav a:link, nav a:visited, nav a:hover, nav a:active{ text-decoration: none; }
+nav a:link, nav a:visited { color: #fff; }
+nav a:hover { color: #C2C767; }
+nav a:active { color: #D87F27; }*/
 
 
 /**************************************************
                    buttons
 ***************************************************/
+/*  interactive button demo */
 
-.btn {
-	width: 115px;
+.btn, button, 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+	display: inline-block;
 	height: 45px;
-	border: none;
+	padding: 0 30px;
 	color: #fff;
-	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 1.4rem;
+	border: 0;
 	border-bottom: 4px solid transparent;
 	letter-spacing: 0;
 	background-image: url("img/btnGloss.png");
 	background-size: 100%;
 	background-color: #1C120E;
 	background-repeat: no-repeat, no-repeat, no-repeat;
-
+	cursor: pointer;
+	box-sizing: border-box;
 }
 
-.buttons ul{ text-align: center }
-.buttons ul li{
-	display: inline-block;
-	margin-right: 15px;
+.btn:hover, .demo .btn:hover,
+button:hover, .demo button:hover, 
+input[type="submit"]:hover,
+input[type="reset"]:hover, 
+input[type="button"]:hover,
+.btn:focus,
+button:focus, 
+input[type="submit"]:focus,
+input[type="reset"]:focus, 
+input[type="button"]:focus {
+	border-bottom: 4px solid #297770;
+	color: #297770;
+	outline: 0;
 }
 
-.buttons .active {
+.btn:active, button:active, 
+input[type="submit"]:active,
+input[type="reset"]:active, 
+input[type="button"]:active {
 	border-bottom: 4px solid #D87F27;
 	color: #D87F27;
+	outline: 0;
 }
 
-.buttons .hover {
-	border-bottom: 4px solid #C2C767;
-	color: #C2C767;
-}
-
-.buttons .disabled {
+.btn:disabled, button:disabled
+input[type="submit"]:disabled, 
+input[type="reset"]:disabled,
+input[type="button"]:disabled {
 	background-color: #ccc;
-}
-
-/* button demo */
-.demo button:link, .demo button:active {
-	border-bottom: 4px solid #D87F27;
-	color: #D87F27;
-}
-.demo button:hover, .demo button:visited {
-	-webkit-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	   -moz-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	        box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	border-bottom: 4px solid #C2C767;
-	color: #C2C767;
+	border: none;
+	color: #666;
 }
 
 
@@ -193,7 +202,9 @@ a:active { color: #D87F27; }
                    Spacing
 ***************************************************/
 
-
+button,
+.btn {
+  margin-bottom: 1rem; }
 
 
 
@@ -204,7 +215,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #E1E1E1; 
+}
 
 
 

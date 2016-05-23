@@ -58,6 +58,7 @@ Copyright 2016 Profound Logic
 	line-height: 25px;
 	padding: 5px 30px;
     border-left: 4px solid transparent;
+    text-decoration: none;
 }
 
 .nav a:active, .nav a:hover {
@@ -149,18 +150,6 @@ h3.title{
 	should always begin with the .demo class 
 *******************************************************/
 
-/* button demo */
-.demo button:active {
-	border-bottom: 4px solid #D87F27;
-	color: #D87F27;
-}
-.demo button:hover {
-	-webkit-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	   -moz-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	        box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
-	border-bottom: 4px solid #C2C767;
-	color: #C2C767;
-}
 
 /**** Code Example Styles  **************************/
 
@@ -244,4 +233,29 @@ p code, span code {
 	-webkit-hyphens: none;
   		-ms-hyphens: none;
  			hyphens: none;
+}
+
+
+
+/* Button Example layout style */
+.buttons ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+
+/*static demo images */
+.buttons .hover {
+	border-bottom: 4px solid #297770;
+	color: #297770;
+}
+
+.buttons .active {
+	border-bottom: 4px solid #D87F27;
+	color: #D87F27;
+}
+
+.buttons .disabled {
+	background-color: #ccc;
 }
