@@ -183,6 +183,53 @@ input[type="button"]:disabled {
                    Forms  
 ***************************************************/
 
+.form-box{
+	width: 100%;
+	margin: auto;
+	-webkit-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+	   -moz-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+			box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
+		
+}
+
+.form-title {
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	padding-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	background-color: #1C120E;
+}
+
+.form-fields {
+	padding: 25px;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 30px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #E5E5E5;
+  border: 0;
+  border-bottom: 4px solid #297770;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+label,
+legend {
+  padding-right: 0.2rem;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
 
 /**************************************************
                    Tabs
@@ -202,9 +249,16 @@ input[type="button"]:disabled {
                    Spacing
 ***************************************************/
 
-button,
-.btn {
-  margin-bottom: 1rem; }
+.btn, button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 2.0rem; 
+}
 
 
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="The Rich and Bold Espresso UI framework">
+  	<meta name="author" content="Profound Logic ">
+	<title>Espresso UI</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="espresso.css">
+
+</head>
+
+<body>
+
+<div class="header"> <h2>Espresso UI 1.0 Documentation </h2>  </div>
+
+<!-- --------------------  Main Navigation ---------------------------- -->
+
+<div class="nav">
+	<ul>
+		<li><a href="overview.html">Overview</a></li>
+		<li><a href="espresso.html">Typography</a></li>
+		<li><a href="colorpalette.html">Color Palette</a></li>
+		<li><a href="icons.html">Icons</a></li>
+		<li><a href="buttons.html">Buttons</a></li>
+		<li><a href="forms.html">Forms</a></li>
+		<li><a href="tabs.html">Tabs</a></li>
+		<li><a href="lists.html">Lists</a></li>
+		<li><a href="links.html">Links</a></li>
+		<li><a href="tables.html">Tables</a></li>	
+	</ul>
+</div><!-- end Nav -->
+
+
+<!-- ----------------------- Main Content ---------------------------- -->
+
+<div id="overview" class="mainContent">
+
+	<div class = "contentTitle">
+		<h1>Espresso elements</h1>
+		<p>CSS elements to style your genie skins by Profound Logic</hp>
+	</div> <!-- End contentTitle-->
+
+	<div class = "forms">
+
+	<div class="sectionTitle">
+			<h3 class="title"> Forms</h3>
+	</div>
+	
+	<!-- The above form looks like this -->
+	<div class="form-box">
+		<div class="form-title"> Contact Info </div>
+
+		<form class="form-fields">
+		  <label for="fname"> First Name </label>
+		  <input type="text" placeholder="Captain" id="fname">
+
+		  <label for="lname"> Last Name </label>
+		  <input type="text" placeholder="America" id="lname">
+
+		  <label for="primary-phone"> Primary # </label>
+		  <input type="tel" placeholder="(123) 456 - 7890" id="primary-phone"> <br>
+
+		  <label for="secondary-phone"> Secondary # </label>
+		  <input type="tel" placeholder="(123) 456 - 7890" id="secondary-phone">
+
+		  <label for="address"> Address </label>
+		  <input type="text" placeholder="1394 Main St." id="address">
+			
+		  <label for="city"> City </label>
+		  <input type="text" placeholder="NewYork" id="city"> <br>
+	      
+	      <label for="location">State</label>
+	      <select id="location">
+	        <option value="Option 1">NewYork</option>
+	        <option value="Option 2">California</option>
+	        <option value="Option 3">Mississippi</option>
+	      </select>
+
+	      <label for="address"> Zipcode </label>
+		  <input type="number" placeholder="12345" id="zipcode">
+	   	
+	   	  <label for="email">Email</label>
+	      <input type="email" placeholder="captain@justiceleague.com" id="email">
+			<br>
+		  	<input class="btn" type="submit" value="Submit">
+		</form>
+	</div>
+
+	</div> <!-- end overview div -->
+</div> <!-- End content div -->
+
+</body>
+</html>

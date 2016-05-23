@@ -92,7 +92,8 @@ Copyright 2016 Profound Logic
 }
 
 /* Elements container padding */
-.typography, .buttons, .colorPalette, .overview {
+.typography, .buttons, .colorPalette, 
+.overview, .forms {
 	padding: 60px;
 	margin: auto;
 	border-left: 1px solid #ccc;
