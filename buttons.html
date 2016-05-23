@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Espresso UI</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
 	<link rel="stylesheet" href="espresso.css">
 </head>
 
 <body>
 
-<div class="header"> <h2>Espresso UI 1.0</h2> </div>
+<div class="header"> <h2>Espresso UI 1.0 Documentation </h2> </div>
 
 <div class="nav">
 	<ul>
 		<li><a href="#overview">Overview</a></li>
 		<li><a href="espresso.html">Typography</a></li>
-		<li><a href="#colorPalette">Color Palette</a></li>
+		<li><a href="colorpalette.html">Color Palette</a></li>
 		<li><a href="#icons">Icons</a></li>
 		<li><a href="buttons.html">Buttons</a></li>
 		<li><a href="forms.html">Forms</a></li>
@@ -32,46 +33,50 @@
 		<p>CSS elements to style your genie skins by Profound Logic</hp>
 	</div> <!-- End contentTitle-->
 	
-	<div class="sectionTitle accentColor2">
-		<h2> Button Styles </h2>
-	</div>
+	
+	<div class="buttons">
+	
+		<div class="sectionTitle">
+			<h2 class="title"> Button Styles </h2>
+			<p class="subtext"> CSS to style HTML buttons</p>
+			<hr>
+		</div>
 
-	<div id="buttons">
 		<ul>
 			<li>
 				<p>normal</p>
-				<button type="button" class ="primaryColor"> button </button>
+				<button type="button" class ="btn"> button </button>
 			</li>
 			<li>
 				<p>active</p>
-				<button type="button" class ="primaryColor active"> button </button>
+				<button type="button" class ="btn active"> button </button>
 			</li>
 			<li>
 				<p>hover</p>
-				<button type="button" class ="primaryColor hover" > button </button>
+				<button type="button" class ="btn hover" > button </button>
 			</li>
 			<li>
 				<p>disabled</p>
-				<button type="button" disabled class ="disabled"> button </button>
+				<button type="button" disabled class ="btn disabled"> button </button>
 			</li>
 		</ul>
 
 		
-		<p> Demo </p>
+		<p> <strong>Demo</strong> </p>
 		<p> To apply the standard espresso button style you can use the html button element with the the
-		<code> .primaryColor </code> class. </p>
+		<code> .btn </code> and <code>.primaryColor </code> class. </p>
 		<div class = "demoBox">
 			
 			<!-- Place Demo Icon -->
 			
 			<div class="demo">
-			<button type="button" class ="primaryColor"> <a href="#buttons">button</a></button>	
+			<button type="button" class ="btn primaryColor"> <a href="#buttons">button</a></button>	
 			</div>
 
 			<div class="codeBox">
 				<pre>
 					<code data-lang="html">
-						&lt;button type="button" class ="primaryColor"&gt; button &lt;/button&gt;
+						&lt;button type="button" class ="btn primaryColor"&gt; button &lt;/button&gt;
 					</code>
 				</pre>
 			</div>

@@ -2,73 +2,92 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="The Rich and Bold Espresso UI framework">
+  	<meta name="author" content="Profound Logic ">
 	<title>Espresso UI</title>
-	<link rel="stylesheet" href="espresso.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="espresso.css">
+
 </head>
 
 <body>
 
-<div class="header"> <h2>Espresso UI 1.0</h2> </div>
+<div class="header"> <h2>Espresso UI 1.0 Documentation </h2>  </div>
+
+<!-- --------------------  Main Navigation ---------------------------- -->
 
 <div class="nav">
 	<ul>
 		<li><a href="#overview">Overview</a></li>
 		<li><a href="espresso.html">Typography</a></li>
-		<li><a href="#colorPalette">Color Palette</a></li>
-		<li><a href="#icons">Icons</a></li>
+		<li><a href="colorpalette.html">Color Palette</a></li>
+		<li><a href="icons.html">Icons</a></li>
 		<li><a href="buttons.html">Buttons</a></li>
 		<li><a href="forms.html">Forms</a></li>
-		<li><a href="#tabs">Tabs</a></li>
+		<li><a href="tabs.html">Tabs</a></li>
 		
 	</ul>
 </div><!-- end Nav -->
 
 
+<!-- ----------------------- Main Content ---------------------------- -->
+
 <div id="overview" class="mainContent">
 
 	<div class = "contentTitle">
-		<h1 class="superheading"> CSS </h1>
 		<h1>Espresso elements</h1>
 		<p>CSS elements to style your genie skins by Profound Logic</hp>
 	</div> <!-- End contentTitle-->
 
-	<div class="sectionTitle accentColor2">
-		<h2> Typography </h2>
-	</div>
+	
 
-	<div id = "typography">
-		
-		<p class="font"> Source Sans Pro Font Family</p>
+	<div class = "typography">
 
-		<h2>Headings</h2>
-		<p>Create lighter, secondary text in any heading with the <code> .subtext </code> class.</p>
-
-		<div class="example">	
-			<h1>H1 Main heading </h1>
-			<p class="subtext"> Source Sans Pro, Black (900), 24px </p>
-			<hr>
-			<h2>H2 Subtitles, sometimes in Bold</h2>
-			<p class="subtext"> Source Sans Pro, Bold (700), 21px </p>
-			<hr>
-			<h3>H3 Source Sans Regular</h3>
-			<p class="subtext"> Source Sans Pro, Regular (400), 18px </p>
-			<hr>
-			<h4>H4 Source Sans Italics</h4>
-			<p class="subtext"> Source Sans Pro, Italic (400), 18px </p>
-			<hr>
-			<h5>H5 Source Sans Light, List Items</h5>
-			<p class="subtext"> Source Sans Pro, light (300), 14px </p>
-			<hr>
-			<h6>H6 Source Sans Extra Light</h6>
-			<p class="subtext"> Source Sans Pro, extralight (200), 14px </p>
+		<div class="sectionTitle">
+			<h3 class="title"> Typography </h2>
 		</div>
 
+		
+		<p> The <strong> typographic base </strong> used for Espresso UI is <em>Source Sans Pro</em> set to 1.5rem (15px) with a 
+		line height of 1.6 (24px). The <em>Source Sans Pro</em> family contains a large variety of weights 
+		to give the designer the most freedom in creating various textures and emphasis for their content.</p>
 
-		<p>Code Snippets for using the h1 - h6 tags in your code</p>
-		<!-- color: #2f6f9f; -->
+		<p>We have created a consistent family of <strong> headings </strong> all with distinct <code>letter-spacing</code>
+			<code>line-height</code> and <code>margin</code> </p>
+		
+	
+		<h1>Heading
+			<span class="subtext"> <code>&lt;h1&gt;</code> 4.0rem, 40px </span> 
+		</h1>
+		
+		<h2>Heading
+			<span class="subtext"> <code>&lt;h2&gt;</code> 3.6rem, 36px </span>
+		</h2>
+		
+		<h3>Heading
+			<span class="subtext"> <code>&lt;h3&gt;</code> 3.0rem, 30px </span>
+		</h3>
+		
+		<h4>Heading
+			<span class="subtext"> <code>&lt;h4&gt;</code>2.4rem, 24px </span>
+		</h4>
+		
+		<h5>Heading
+			<span class="subtext"> <code>&lt;h5&gt;</code> 1.8rem, 18px </span>
+		</h5>
+		
+		<h6>Heading
+			<span class="subtext"><code>&lt;h6&gt;</code> 1.5rem, 15px</span>
+		</h6>
+
+		<p>You can create lighter, secondary text in any heading with the <code> .subtext </code> class.
+		   which is a 1.4rem (14px) with a line hight of 1.6.
+		</p>
+		
 		<div class="codeBox">
 			<pre>
 				<code class="language-html" data-lang="html">
+					&lt;!-- Standard H1 - H6 Headings --&gt; <br>
 					<span class= "nt"> &lt;h1&gt; </span> 
 					h1 Espresso heading 
 					<span class= "nt">&lt;/h1&gt;</span>
@@ -102,7 +121,7 @@
 		</div>
 
 	
-		<h2> Body Copy </h2>
+		<h3> Body Copy </h3>
 		<p>Espresso's global default font-size is 14px, with a line-height of 1.4. This is applied to the <body> and all paragraphs.</p>
 		
 		<div class="example">	
@@ -117,8 +136,9 @@
 				<pre>
 					<code class="language-html" data-lang="html">
 						
+						&lt;!-- Base body text --&gt; <br>
 						<span class= "nt"> &lt;p&gt; </span> 
-						body text  
+						The base styling for all text is 1.4rem (14px) and a line height of 1.6 (24px)
 						<span class= "nt">&lt;/p&gt;</span>
 						<br>
 
@@ -127,19 +147,25 @@
 	    </div>
 	</div> <!-- end typography id -->
 
-	<div id = "colorPalette">
-		<h1>Color Palette</h1>
-		<p>The Espresso UI theme as a vibrant and dynamic color palette to give a rich and 
-			and bold feel to your application's user Interface </p>
+	<div class = "colorPalette">
+		<h3 class= "title" >Color Palette</h3>
+		<p>The Espresso UI theme as a vibrant and dynamic <strong>color palette</strong> to give a rich and bold feel to your application's user Interface. The colors can be applied to elements as background colors or accents to text.</p> 
+
+		<p> A series of descriptive classes make it easy to apply the color 
+			for text applications: 
+			<br><code>.brown</code> <code>.teal</code> <code>.lightgreen</code> <code>.orange</code> <code>.yellow</code> <code>.beige</code> <p>
+
+			<p> 
+			Background colors are just as easy to apply with these classes: <br><code>.bg-brown</code> <code>.bg-teal</code> <code>.bg-lightgreen</code> <code>.bg-orange</code>  <code>.bg-yellow</code> <code>.bg-beige</code></p>
 		<ul>
-			<li class="primaryColor"> Primary Color </li>	
-			<li class="accentColor1"> Accent Color </li>
-			<li class="accentColor2"> Accent Color </li>
+			<li class="bg-brown"> Primary Color </li>	
+			<li class="bg-teal"> Accent One </li>
+			<li class="bg-green"> Accent Two  </li>
 		</ul>
 		<ul>
-			<li class="accentColor3"> Accent Color </li>
-			<li class="accentColor4"> Accent Color </li>
-			<li class="bgColor">Background</li>
+			<li class="bg-orange"> Accent Three </li>
+			<li class="bg-yellow"> Accent Four </li>
+			<li class="bg-beige">Background</li>
 		</ul>
 
 		
@@ -163,7 +189,7 @@
 						Accent Color One <br>
 						/* Font color */ <br>
 						.accentOne { <br>
-							color: color: #297770; <br>
+							color: #297770; <br>
 						}<br>
 
 						/* background color */ <br>
