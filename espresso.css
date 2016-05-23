@@ -15,27 +15,22 @@ Copyright 2016 Profound Logic
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 * Base Styles
 * Typography
-
-
+* Color Palette
 - Links
 - Buttons
 - Forms
 - Tabs
 - Lists
-- Code
 - Tables
 - Spacing
-- Utilities
-- Clearing
-- Media Queries
+- Misc
+__________________________________________________
 */
 
 
 
-
-
 /**************************************************
-                   Base Styles
+                   Base Page Styles
 ***************************************************/
 
 /* html is set to 62.5% so that all the REM measurements
@@ -55,6 +50,7 @@ body{
 	font-weight: 400;
 	color: #222;
 }
+
 
 /**************************************************
                     Typography 
@@ -88,6 +84,26 @@ p{
 	letter-spacing: 0;
 }
 
+/**************************************************
+                 Color Palette
+***************************************************/
+
+/*   font colors */
+.brown{ color: #1C120E; }
+.teal { color: #297770; }
+.lightgreen { color: #C2C767; }
+.orange { color: #D87F27; }
+.yellow { color: #F7D98F; }
+.beige  { color: #F9F0DC; }
+
+/*    Background colors */
+.bg-brown { background-color: #1C120E; }
+.bg-teal  { background-color: #297770; }
+.bg-green { background-color: #C2C767; }
+.bg-orange{ background-color: #D87F27; }
+.bg-yellow{	background-color: #F7D98F; }
+.bg-beige {	background-color: #F9F0DC; }
+
 
 
 /**************************************************
@@ -99,241 +115,20 @@ a:link, a:visited { color: #fff; }
 a:hover { color: #C2C767; }
 a:active { color: #D87F27; }
 
-code, pre  {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-p code, span code {
-	background-color: #eee;
-	border: 1px solid #ccc;
-	font-size: 12px;
-	color: #751313 ;
-	margin: 5px;
-	padding: 2px;
-	border-radius: 3px;
-	-webkit-hyphens: none;
-  		-ms-hyphens: none;
- 			hyphens: none;
-}
 
 
-hr{
-   border: 0.5px solid #e5e5e5;
-}
-
-ul li {
-	font-family: "Source Sans Pro", "sans-serif";
-	list-style: none;	
-}
-
-div {
-	display: block;
-}
-
-.header {
-	position: absolute;
-	left:0;
-	right: 0;
-	height: 80px;
-	background-color: #1C120E;
-	border-bottom: solid 5px #C2C767;
-	color: #fff;
-}
-
-.header h2 {
-	margin-top: 15px;
-	margin-left: 25px;
-}
-
-/**** Side bar navigation styling **************************/
-
-.nav{
-	position: fixed;
-	top: 85px;
-	left: 0;
-	bottom: 0;
-	width: 15%;
-	height: 100%;
-	background-color: #fff;
-}
-
-.nav ul {
-	/*background-color: #f7f5fa;*/
-	/*margin: 25px;
-	padding: 15px;*/
-	height: 450px;
-	padding-left: 0;
-
-}
-
-.nav a {
-	color: #716b7a;
-	text-shadow: 0 1px 0 #fff;
-	display: block;
-	font-size: 15px;
-	line-height: 25px;
-	padding: 5px 30px;
-    border-left: 4px solid transparent;
-}
-
-.nav a:active, .nav a:hover {
-	border-left: 4px solid #297770;
-	color: #297770;
-}
-
-
-/***** Main Content containers **************************/
-
-.mainContent {
-	position: absolute;
-	left: 15%;
-	top: 85px;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	border-left: 1px solid #ccc;
-}
-
-.contentTitle {
-	padding-top: 25px;
-	padding-left: 25px;
-	height: 100px;
-	background-color: #297770; 
-	color: #fff;
-}
-
-/* Elements container padding */
-.typography, .buttons, .colorPalette {
-	padding: 60px;
-	margin: auto;
-}
-
-/* Main section heading */
-
-.sectionTitle{
-	text-align: center;
-	padding-bottom: 15px;
-}
-
-/* current element section */
-h3.title{
-	font-style: italic;
-	font-weight: 300;
-	height: 60px;
-	padding: 15px 0 0 0;
-	color: #333;
-	border-bottom: 1px solid #333;
-}
-
-
-.typography .font{
-	font-size: 24px;
-	font-weight: 300;
-	margin-top: 0;
-}
-
-.example {
-    position: relative;
-    padding: 20px 15px 15px;
-    margin: 0 15px 15px;
-    background-color: #fff;
-    border-color: #e5e5e5;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/* Color Palette Swatches ************************/
-
-.colorPalette ul li {
-	display: inline-block;
-	padding: 15px;
-	list-style: none;
-	color: #fff;
-	width: 100px;
-	height: 100px;
-	margin: 10px;
-}
-
-/* dark brown */
-.bg-brown {
-	background-color: #1C120E;
-}
-
-/* teal */
-.bg-teal{
-	background-color: #297770;
-}
-
-/* light green */
-.bg-green{
-	background-color: #C2C767;
-}
-
-/* orange */
-.bg-orange{
-	background-color: #D87F27;
-}
-
-/* yellow */
-.bg-yellow{
-	background-color: #F7D98F;
-}
-
-/* off white / beige */
-.bg-beige {
-	background-color: #F9F0DC;
-	color: #222;
-}
-
-.colorPalette ul li.bgColor, .colorPalette ul li.accentColor4 {
-	color: #222;
-}
-
-
-/***** Core theme base colors ***********************/
-
-/* dark brown */
-.brown{
-	color: #1C120E;
-}
-
-/* teal */
-.teal{
-	color: #297770;
-}
-
-/* light green */
-.lightgreen {
-	color: #C2C767;
-}
-
-/* orange */
-.orange {
-	color: #D87F27;
-}
-
-/* yellow */
-.yellow {
-	 color: #F7D98F
-}
-
-/* off white / beige */
-.beige {
-	 color: #F9F0DC;
-}
-
-
-/************* Button Styles ********************/
+/**************************************************
+                   buttons
+***************************************************/
 
 .btn {
 	width: 115px;
 	height: 45px;
 	border: none;
 	color: #fff;
-	font-size: 14px;
-	font-weight: 00;
+	font-size: 1.5rem;
 	border-bottom: 4px solid transparent;
-	letter-spacing: 0.2em;
+	letter-spacing: 0;
 	background-image: url("img/btnGloss.png");
 	background-size: 100%;
 	background-color: #1C120E;
@@ -352,7 +147,6 @@ h3.title{
 	color: #D87F27;
 }
 
-
 .buttons .hover {
 	border-bottom: 4px solid #C2C767;
 	color: #C2C767;
@@ -362,44 +156,12 @@ h3.title{
 	background-color: #ccc;
 }
 
-
-/**** Demo Box Styles *********************************
- A handy little box to display your nifty css demos.
-*******************************************************/
-
-.demoBox {
-	margin: auto;
-	width: 90%;
-	margin-top: 25px;
-	padding-top: 15px;
-	-webkit-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
-	   -moz-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
-			box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
-}
-
-.demo {
-	height: 50px;
-	padding: 0 0 15px 0;
-	text-align: center;
-	background-color: #fff;
-}
-
-.demo a{
-	text-decoration: none;
-	color: #fff;
-}
-
-/**** Demo Elememt styles *****************************
-   CSS elements that are styled for demo purposes 
-	should always begin with the .demo class 
-*******************************************************/
-
 /* button demo */
-.demo button:active {
+.demo button:link, .demo button:active {
 	border-bottom: 4px solid #D87F27;
 	color: #D87F27;
 }
-.demo button:hover {
+.demo button:hover, .demo button:visited {
 	-webkit-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
 	   -moz-box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
 	        box-shadow: 7px 7px 28px -8px rgba(46,45,46,1);
@@ -407,54 +169,42 @@ h3.title{
 	color: #C2C767;
 }
 
-/**** Code Example Styles  **************************/
 
-.codeBox{
-    padding: 9px 14px;
-    margin-bottom: 14px;
-    background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;
-    border-left: 4px solid #297770;
-}
+/**************************************************
+                   Forms  
+***************************************************/
 
-.demoBox .codeBox {
-	height: 60px;
-}
 
-.codeBox pre {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: transparent;
-    border: 0;
-    white-space: nowrap;
-}
+/**************************************************
+                   Tabs
+***************************************************/
 
-.codeBox pre code {
-    font-size: inherit;
-    color: #333;
-}
 
-pre {
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.428571429;
-    color: #333;
-    word-break: break-all;
-    word-wrap: break-word;
-    overflow: auto;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+/**************************************************
+                   Lists
+***************************************************/
 
-/* Code syntax highlighting */
 
-.nt {
-    color: #2f6f9f;
-}
+/**************************************************
+                   Tables
+***************************************************/
+
+/**************************************************
+                   Spacing
+***************************************************/
+
+
+
+
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
 
 
 

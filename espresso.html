@@ -6,6 +6,7 @@
   	<meta name="author" content="Profound Logic ">
 	<title>Espresso UI</title>
 	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
 	<link rel="stylesheet" type="text/css" href="espresso.css">
 
 </head>
@@ -18,7 +19,7 @@
 
 <div class="nav">
 	<ul>
-		<li><a href="#overview">Overview</a></li>
+		<li><a href="overview.html">Overview</a></li>
 		<li><a href="espresso.html">Typography</a></li>
 		<li><a href="colorpalette.html">Color Palette</a></li>
 		<li><a href="icons.html">Icons</a></li>
@@ -53,9 +54,12 @@
 		to give the designer the most freedom in creating various textures and emphasis for their content.</p>
 
 		<p>We have created a consistent family of <strong> headings </strong> all with distinct <code>letter-spacing</code>
-			<code>line-height</code> and <code>margin</code> </p>
+			<code>line-height</code> and <code>margin</code>. You can create lighter, secondary text in any heading with the <code> .subtext </code> class
+		   which is a 1.4rem (14px) with a line-height of 1.6.
+		</p>
 		
 	
+	<div class="example">
 		<h1>Heading
 			<span class="subtext"> <code>&lt;h1&gt;</code> 4.0rem, 40px </span> 
 		</h1>
@@ -79,11 +83,9 @@
 		<h6>Heading
 			<span class="subtext"><code>&lt;h6&gt;</code> 1.5rem, 15px</span>
 		</h6>
+	</div>
 
-		<p>You can create lighter, secondary text in any heading with the <code> .subtext </code> class.
-		   which is a 1.4rem (14px) with a line hight of 1.6.
-		</p>
-		
+	
 		<div class="codeBox">
 			<pre>
 				<code class="language-html" data-lang="html">
@@ -122,7 +124,7 @@
 
 	
 		<h3> Body Copy </h3>
-		<p>Espresso's global default font-size is 14px, with a line-height of 1.4. This is applied to the <body> and all paragraphs.</p>
+		<p>Espresso's global default font-size is 1.5 rem (15px), with a line-height of 1.6. This is applied to the <body> and all paragraphs.</p>
 		
 		<div class="example">	
 			<p><strong>Body text</strong></p>
@@ -138,7 +140,7 @@
 						
 						&lt;!-- Base body text --&gt; <br>
 						<span class= "nt"> &lt;p&gt; </span> 
-						The base styling for all text is 1.4rem (14px) and a line height of 1.6 (24px)
+						The base styling for all text is 1.4 rem (14px) and a line height of 1.6 (24px)
 						<span class= "nt">&lt;/p&gt;</span>
 						<br>
 
@@ -149,14 +151,28 @@
 
 	<div class = "colorPalette">
 		<h3 class= "title" >Color Palette</h3>
-		<p>The Espresso UI theme as a vibrant and dynamic <strong>color palette</strong> to give a rich and bold feel to your application's user Interface. The colors can be applied to elements as background colors or accents to text.</p> 
+		<p>The Espresso UI theme has a vibrant and dynamic <strong>color palette</strong> to give a rich and bold feel to your application's user Interface. The colors can be applied to elements as background colors or accents to text.</p> 
 
 		<p> A series of descriptive classes make it easy to apply the color 
 			for text applications: 
 			<br><code>.brown</code> <code>.teal</code> <code>.lightgreen</code> <code>.orange</code> <code>.yellow</code> <code>.beige</code> <p>
 
+			<div class="example">
+				<p> Applying the <span class="teal">teal</span> and <span class="lightgreen">lightgreen </span> class to text.</p>
+			</div>
+
+			<div class="codeBox">
+				<pre>
+					<code data-lang ="html">
+
+					&lt;p&gt; Applying the &lt;span class="teal"&gt;teal&lt;/span&gt; class to text.&lt;/p&gt;
+	
+					</code>
+				</pre>
+			</div>
+
 			<p> 
-			Background colors are just as easy to apply with these classes: <br><code>.bg-brown</code> <code>.bg-teal</code> <code>.bg-lightgreen</code> <code>.bg-orange</code>  <code>.bg-yellow</code> <code>.bg-beige</code></p>
+			Background colors are just as easy to apply with these classes: <br><code>.bg-brown</code> <code>.bg-teal</code> <code>.bg-lightgreen </code> <code>.bg-orange</code>  <code>.bg-yellow</code> <code>.bg-beige</code></p>
 		<ul>
 			<li class="bg-brown"> Primary Color </li>	
 			<li class="bg-teal"> Accent One </li>
@@ -165,42 +181,32 @@
 		<ul>
 			<li class="bg-orange"> Accent Three </li>
 			<li class="bg-yellow"> Accent Four </li>
-			<li class="bg-beige">Background</li>
+			<li class="bg-beige"> Background</li>
 		</ul>
 
-		
-			<div class="codeBox">
+		<div class="codeBox">
 				<pre>
-					<code data-lang ="css">
-						
-						Primary Color <br>
-
-						/* Font color */ <br>
-						.primary { <br>
-							&nbsp color: #1C120E; <br>
-						}</br>
-
-						/* background color */ <br>
-						.primaryColor { <br>
-							&nbsp background-color: #1C120E; <br>
-						} <br>
-
-						<br>
-						Accent Color One <br>
-						/* Font color */ <br>
-						.accentOne { <br>
-							color: #297770; <br>
-						}<br>
-
-						/* background color */ <br>
-						.accentColor1{ <br>
-							background-color: #297770; <br>
-						}<br>
-
+					<code data-lang ="html">
+					
+					&lt;!-- Applying background colors to list elements example --><br>
+					&lt;ul&gt;<br>
+						&lt;li class="bg-brown"&gt; Primary Color &lt;/li&gt;<br>	
+						&lt;li class="bg-teal"&gt; Accent One &lt;/li&gt; <br>
+						&lt;li class="bg-green"&gt; Accent Two  &lt;/li&gt; <br>
+					&lt;/ul&gt;<br>
+					&lt;ul&gt;<br>
+						&lt;li class="bg-orange"&gt; Accent Three &lt;/li&gt;<br>
+						&lt;li class="bg-yellow"&gt; Accent Four &lt;/li&gt;<br>
+						&lt;li class="bg-beige"&gt; Background&lt;/li&gt;<br>
+					&lt;/ul&gt;<br>
 	
 					</code>
 				</pre>
 			</div>
+
+			
+		
+			
 	
 	</div> <!-- end colorpalette id -->
 
