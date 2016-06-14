@@ -45,10 +45,14 @@ html{
 body{
 	margin: 0;
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	line-height: 1.6;
 	font-weight: 400;
 	color: #222;
+}
+
+ul li {
+	list-style: none;
 }
 
 a.btn {
@@ -93,12 +97,12 @@ p{
 ***************************************************/
 
 /*   font colors */
-.brown{ color: #1C120E; }
-.teal { color: #297770; }
-.lightgreen { color: #C2C767; }
-.orange { color: #D87F27; }
-.yellow { color: #F7D98F; }
-.beige  { color: #F9F0DC; }
+.brown{ color: #1C120E; } 		/*rbg : 28 18 14 */
+.teal { color: #297770; }       /*rbg : 41 119 112 */
+.lightgreen { color: #C2C767; } /*rbg : 194 199 108 */
+.orange { color: #D87F27; } 	/*rbg : 216 127 39 */
+.yellow { color: #F7D98F; }     /*rbg : 247 217 143 */
+.beige  { color: #F9F0DC; }  	/*rbg : 249 240 220 */
 
 /*    Background colors */
 .bg-brown { background-color: #1C120E; }
@@ -140,8 +144,9 @@ input[type="button"] {
 	font-size: 1.4rem;
 	border: 0;
 	border-bottom: 4px solid transparent;
+	border-radius: 3px;
 	letter-spacing: 0;
-	background-image: url("img/btnGloss.png");
+	background-image: url("../img/btnGloss.png");
 	background-size: 100%;
 	background-color: #1C120E;
 	background-repeat: no-repeat, no-repeat, no-repeat;
@@ -160,7 +165,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus, 
 input[type="button"]:focus {
 	border-bottom: 4px solid #297770;
-	color: #297770;
+	/*color: #297770;*/
 	outline: 0;
 }
 
@@ -190,6 +195,8 @@ input[type="button"]:disabled {
 .form-box{
 	width: 100%;
 	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	-webkit-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
 	   -moz-box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
 			box-shadow: 5px 5px 20px -6px rgba(46,45,46,1);
@@ -198,16 +205,21 @@ input[type="button"]:disabled {
 
 .form-title {
 	width: 100%;
-	height: 50px;
+	height: 40px;
 	color: #fff;
 	text-align: center;
 	padding-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.0rem;
 	background-color: #1C120E;
 }
 
 .form-fields {
 	padding: 25px;
+}
+
+.form-box ul li {
+	list-style: none;
+	display: inline-block;
 }
 
 input[type="email"],
@@ -230,9 +242,48 @@ select {
 
 label,
 legend {
-  padding-right: 0.2rem;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus{
+	border: 0;
+	outline: 0;
+	border-bottom: 4px solid #C2C767; 
+}
+
+#address, #email {
+	width: 250px;
+}
+
+#zipcode{
+	width: 100px;
+}
+
+textarea {
+  min-height: 200px;
+  min-width: 500px;
+  padding-top: 6px;
+  padding-bottom: 6px; 
+  display: block;
+}
+
+.btn-center{
+	margin-left: 42%;
+}
+
+
 
 
 /**************************************************
@@ -248,6 +299,237 @@ legend {
 /**************************************************
                    Tables
 ***************************************************/
+
+/*Yellow and Brown Table design */
+table#espressoTable {
+	margin: 20px 0 0 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #1C120E; 
+	color: #fff;
+}
+
+table#espressoTable th, table#espressoTable td { text-align: center; }
+
+table#espressoTable thead {
+	font-style: 0.8rem;
+	line-height: 1.4rem;
+	background-color: #D87F27;
+	text-transform: uppercase;
+}
+
+table#espressoTable thead th {
+	color: rgb(0, 0, 0, 0.7);
+	padding: 1.2rem;
+	vertical-align: bottom;
+}
+
+/*setting the width of the heading for each table column*/
+table#espressoTable thead th:nth-child(1){ 
+	width: 20%; 
+	text-align: left;
+	padding-left: 20px;
+}
+table#espressoTable thead th:nth-child(2){ width: 30%; }
+table#espressoTable thead th:nth-child(3){ width: 35%; }
+table#espressoTable thead th:nth-child(4){ width: 15%; }
+
+table#espressoTable tbody { font-size: 1.4rem; line-height: 1.5rem; }
+table#espressoTable tbody tr { 
+	border-top: 1px solid rgba(248, 220, 174, 0.8); 
+	transition: background-color .6s;
+}
+
+/*alternating row colors odd: 1, 3, 5.., even: 2,4...*/
+table#espressoTable tbody tr:nth-child(even) { background-color: rgba(247, 217, 143, 0.1); }
+table#espressoTable tbody tr:hover { background-color: rgba(231, 147, 0, 0.6); }
+table#espressoTable tbody td { padding: 1.2rem; }
+table#espressoTable tbody td:first-child{
+	text-align: left;
+	padding-left: 20px;
+	font-weight: 600;
+	background-color: rgba(231, 147, 0, 0.25);
+}
+
+/*table footer styles*/
+table#espressoTable tfoot { font-size: 1.4rem; }
+table#espressoTable tfoot tr { border-top: 2px solid #D87F27; }
+table#espressoTable tfoot td {
+	color: rgba(255, 255, 215, 0.6);
+	text-align: left;
+	line-height: 1.5rem;
+	padding: 15px 20px;
+}
+table#espressoTable tfoot a { color: #f8dcad; text-decoration: none; }
+table#espressoTable tfoot a:hover { color: #fff; text-decoration: underline; }
+
+/************ Blue Table design *********************/
+/*.teal { color: #297770; }
+.lightgreen { color: #C2C767; }*/
+
+table#blueTable {
+	margin: 20px 0 0 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #1C120E; 
+	color: #fff;
+}
+
+table#blueTable th, table#blueTable td { text-align: center; }
+
+table#blueTable thead {
+	font-style: 0.8rem;
+	line-height: 1.4rem;
+	background-color: #297770;;
+	text-transform: uppercase;
+}
+
+table#blueTable thead th {
+	color: rgb(0, 0, 0, 0.7);
+	padding: 1.2rem;
+	vertical-align: bottom;
+}
+
+/*setting the width of the heading for each table column*/
+table#blueTable thead th:nth-child(1){ 
+	width: 20%; 
+	text-align: left;
+	padding-left: 20px;
+}
+table#blueTable thead th:nth-child(2){ width: 30%; }
+table#blueTable thead th:nth-child(3){ width: 35%; }
+table#blueTable thead th:nth-child(4){ width: 15%; }
+
+table#blueTable tbody { font-size: 1.4rem; line-height: 1.5rem; }
+table#blueTable tbody tr { 
+	border-top: 1px solid rgba(248, 220, 174, 0.8); 
+	transition: background-color .6s;
+}
+
+/*alternating row colors odd: 1, 3, 5.., even: 2,4...*/
+table#blueTable tbody tr:nth-child(even) { background-color: rgba(247, 217, 143, 0.1); }
+table#blueTable tbody tr:hover { background-color: rgba(41, 119, 112, 0.6); }
+table#blueTable tbody td { padding: 1.2rem; }
+table#blueTable tbody td:first-child{
+	text-align: left;
+	padding-left: 20px;
+	font-weight: 600;
+	background-color: rgba(194, 199, 108, 0.25);
+}
+
+/*table footer styles*/
+table#blueTable tfoot { font-size: 1.4rem; }
+table#blueTable tfoot tr { border-top: 2px solid #297770; }
+table#blueTable tfoot td {
+	color: rgba(255, 255, 215, 0.6);
+	text-align: left;
+	line-height: 1.5rem;
+	padding: 15px 20px;
+}
+table#blueTable tfoot a { color: #f8dcad; text-decoration: none; }
+table#blueTable tfoot a:hover { color: #fff; text-decoration: underline; }
+
+
+/************ Light Table design *********************/
+/*.teal { color: #297770; }
+.lightgreen { color: #C2C767; }*/
+
+table#lightTable {
+	margin: 20px 0 0 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #fff; 
+	color: #222;
+}
+
+table#lightTable th, table#lightTable td { 
+	text-align: left; 
+	border-left: 1px solid rgba(41, 119, 112, 0.2);
+	border-right: 1px solid rgba(41, 119, 112, 0.2);
+}
+
+table#lightTable thead {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 200;
+	font-size: 1.6rem;
+	line-height: 1.4rem;
+	background-color: #C2C767; /*.lightgreen*/ 
+	text-transform: uppercase;
+}
+
+
+table#lightTable thead th {
+	color: rgba(0, 0, 0, 0.6);
+	padding: 1.2rem;
+	vertical-align: bottom;
+}
+
+/*setting the width of the heading for each table column*/
+table#lightTable thead th:nth-child(1){ 
+	width: 15%; 
+	text-align: left;
+	padding-left: 20px;
+}
+table#lightTable thead th:nth-child(2){ width: 20%; }
+table#lightTable thead th:nth-child(3){ width: 25%; }
+table#lightTable thead th:nth-child(4){ width: 15%; }
+
+table#lightTable tbody { font-size: 1.4rem; line-height: 1.5rem; }
+table#lightTable tbody tr { 
+	border-top: 1px solid rgba(41, 119, 112, 0.2);  /*teal*/
+	transition: background-color .6s;
+}
+
+/*alternating row colors odd: 1, 3, 5.., even: 2,4...*/
+table#lightTable tbody tr:first-child{ border-top: 4px solid rgba(41, 119, 112, .4); } /*teal*/
+table#lightTable tbody tr:nth-child(even) { background-color: rgba(25, 25, 25, 0.05); }
+table#lightTable tbody tr:hover { background-color: rgba(41, 119, 112, 0.6); } /*light green*/
+table#lightTable tbody td { padding: 1.2rem; }
+table#lightTable tbody td:first-child{
+	text-align: left;
+	padding-left: 20px;
+	font-weight: 700;
+	/*background-color: rgba(194, 199, 108, 0.25);*/
+}
+
+/*table footer styles*/
+table#lightTable tfoot { font-size: 1.4rem; }
+table#lightTable tfoot tr { border-top: 2px solid #297770; }
+table#lightTable tfoot td {
+	color: rgba(0, 0, 0, 0.6);
+	text-align: left;
+	line-height: 1.5rem;
+	padding: 15px 20px;
+}
+table#lightTable tfoot a { color: #C2C767; text-decoration: none; }
+table#lightTable tfoot a:hover { color: #297770	; text-decoration: underline; }
+
+
+/* Sorted Table Styles */
+/* Sorted class is added automatically via js/jquery.tablesorter.js */
+table#lightTable thead th.sorted {
+	background-color: : #fee8cd;
+	border-left: 1px dotted #9a9a9a;
+	border-right: 1px dotted #9a9a9a;
+	color: rgba(0,0,0, 0.9);
+}
+
+table#lightTable thead th.sorted::after{
+	content: '';
+	display: inline-block;
+	margin-left: 8px;
+	margin-top: -2px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+table#lightTable thead th.sorted.asc::after { border-top: 8px solid rgba(0,0,0,0.4); }
+table#lightTable thead th.sorted.desc::after { border-bottom: 8px solid rgba(0,0,0,0.4); }
+table#lightTable thead th.header {
+	cursor: pointer;
+}
+
+
 
 /**************************************************
                    Spacing

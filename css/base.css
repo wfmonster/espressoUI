@@ -14,7 +14,7 @@ Copyright 2016 Profound Logic
 
 
 
-.header {
+.pageHeader {
 	position: absolute;
 	left:0;
 	right: 0;
@@ -93,7 +93,7 @@ Copyright 2016 Profound Logic
 
 /* Elements container padding */
 .typography, .buttons, .colorPalette, 
-.overview, .forms {
+.overview, .forms, .tables {
 	padding: 60px;
 	margin: auto;
 	border-left: 1px solid #ccc;

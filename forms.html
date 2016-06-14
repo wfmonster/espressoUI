@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/espresso.css">
+	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+	<script src = "js/forms.js"></script>
 
 </head>
 
@@ -53,41 +55,89 @@
 		<div class="form-title"> Contact Info </div>
 
 		<form class="form-fields">
-		  <label for="fname"> First Name </label>
-		  <input type="text" placeholder="Captain" id="fname">
 
-		  <label for="lname"> Last Name </label>
-		  <input type="text" placeholder="America" id="lname">
+		<ul>
+			<li>
+				<label for="fname"> First Name </label>
+		  		<input id="fname" type="text" placeholder="Captain" value="">
+		  	</li>
+		  	<li>
+		  		<label for="lname"> Last Name </label>
+		  		<input id="lname" type="text" placeholder="America" value="">
+		  	</li>
+		  	<li>
+		  		<label for="primary-phone"> Primary # </label>
+		 		<input type="tel" placeholder="(123) 456 - 7890" id="primary-phone"> <br/>
+		  	</li>
 
-		  <label for="primary-phone"> Primary # </label>
-		  <input type="tel" placeholder="(123) 456 - 7890" id="primary-phone"> <br>
+		</ul>
 
-		  <label for="secondary-phone"> Secondary # </label>
-		  <input type="tel" placeholder="(123) 456 - 7890" id="secondary-phone">
+		<ul>
+		  	<li>
+		  		<label for="address"> Address </label>
+		  	    <input id="address" type="text" placeholder="1394 Main St." value="">
+		  	</li>
+		  	<li>
+		  		<label for="city"> City </label>
+		 	    <input id="city" type="text" placeholder="NewYork" value=""> <br/>
+		  	</li>
+		  	<li> 
+		  		<label for="location">State</label>
+			      <select id="location">
+			        <option value="Option 1">NewYork</option>
+			        <option value="Option 2">California</option>
+			        <option value="Option 3">Mississippi</option>
+	     		  </select>
+	  		</li>
+	  	</ul>
 
-		  <label for="address"> Address </label>
-		  <input type="text" placeholder="1394 Main St." id="address">
-			
-		  <label for="city"> City </label>
-		  <input type="text" placeholder="NewYork" id="city"> <br>
-	      
-	      <label for="location">State</label>
-	      <select id="location">
-	        <option value="Option 1">NewYork</option>
-	        <option value="Option 2">California</option>
-	        <option value="Option 3">Mississippi</option>
-	      </select>
+	  	<ul>
+	  		<li>
+	  			<label for="zipcode"> Zipcode </label>
+		  		<input id="zipcode" type="text" placeholder="12345" value="" >
+	  		</li>
+	  		<li>
+	  			<label for="email">Email</label>
+	      		<input id="email" type="email" placeholder="captain@justiceleague.com" value="name@email.com" >
+	  		</li>
+		</ul>
 
-	      <label for="address"> Zipcode </label>
-		  <input type="number" placeholder="12345" id="zipcode">
-	   	
-	   	  <label for="email">Email</label>
-	      <input type="email" placeholder="captain@justiceleague.com" id="email">
-			<br>
-		  	<input class="btn" type="submit" value="Submit">
+		  	<input class="btn btn-center" type="submit" value="Submit">
 		</form>
 	</div>
 
+		<form class="form-fields">
+			<ul>
+  			<li>
+  				<label for="email">Email</label>
+      			<input id="email2" type="text" name="email" value="name@email.com" >
+      		</li>
+
+	  		<li><label for="location">Reason for Contacting</label>
+		      <select id="location">
+		        <option value="Option 1">General Questions</option>
+		        <option value="Option 2">Report an Issue</option>
+		        <option value="Option 3">Saying Hi...</option>
+	 		  </select>
+	 		</li>
+
+			<li>
+				<label class="message" for="Message">Message</label>
+				<textarea type="text" id="message" value="What's on your mind?"></textarea>
+			</li>
+			
+			<li>
+				<label class="example-checkbox">
+			    	<input type="checkbox">
+			    	<span class="label-body">Send a copy to yourself</span>
+			  	</label>
+		  	</li>
+
+			<input class="btn" type="submit" value="Submit">
+
+			</ul>
+		</form>
+	
 	</div> <!-- end overview div -->
 </div> <!-- End content div -->
 
